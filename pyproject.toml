@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "google-trend-data-experiment"
+version = "0.0.1"
+description = "Experiments on google trend forecasting"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "google_trend_data_experiment"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cloudpathlib = "^0.15.1"
+pandas = "^2.0.3"
+plotly = "^5.15.0"
+darts = "^0.24.0"
+
+
+[tool.poetry.group.notebook.dependencies]
+ipykernel = "^6.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
